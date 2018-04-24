@@ -1,0 +1,23 @@
+Package: anonymizedf
+Type: Package
+Title: Anonymize your dataframes
+Version: 0.1.0
+Author: Bryan Shalloway
+Maintainer: Bryan Shalloway <brshallo@gmail.com>
+Description: Provide a dataframe and list of columns you wish to anonymize.
+    Output any/all of the following in a list: the anonymized dataframe, 
+    the original dataframe, the keys that connect the anonymized values to
+    the original data, the seeds that were used for anonymizing each column.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+  dplyr,
+  purrr,
+  tibble,
+  digest,
+  anonymizer,
+  microbenchmark,
+  magrittr,
+  devtools
+RoxygenNote: 6.0.1
